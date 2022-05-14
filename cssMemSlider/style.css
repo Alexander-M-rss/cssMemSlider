@@ -58,6 +58,10 @@ body {
   object-fit: contain;
 }
 
+.hidden{
+  display: none;
+}
+
 .bottom {
   width: 100%;
   padding-top: 2rem;
@@ -101,10 +105,6 @@ body {
   background-color: var(--control);
 }
 
-.slider-btn.active {
-  background-color: transparent;
-}
-
 .control:hover {
   cursor: pointer;
 }
@@ -115,6 +115,10 @@ body {
   cursor: pointer;
 }
 
-.control:hover .slider-btn.active {
+input#radio-btn1:checked ~ .bottom .control-frame  .controls label[for="radio-btn1"] .slider-btn,
+input#radio-btn2:checked ~ .bottom .control-frame  .controls label[for="radio-btn2"] .slider-btn,
+input#radio-btn3:checked ~ .bottom .control-frame  .controls label[for="radio-btn3"] .slider-btn,
+input#radio-btn4:checked ~ .bottom .control-frame  .controls label[for="radio-btn4"] .slider-btn,
+input#radio-btn5:checked ~ .bottom .control-frame  .controls label[for="radio-btn5"] .slider-btn {
   background-color: transparent;
 }
