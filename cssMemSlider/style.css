@@ -120,6 +120,10 @@ body {
   cursor: pointer;
 }
 
+.control:active .slider-btn{
+  transform: scale(1.2);
+}
+
 input#radio-btn1:checked ~ .bottom .control-frame .controls label[for="radio-btn1"] .slider-btn,
 input#radio-btn2:checked ~ .bottom .control-frame .controls label[for="radio-btn2"] .slider-btn,
 input#radio-btn3:checked ~ .bottom .control-frame .controls label[for="radio-btn3"] .slider-btn,
